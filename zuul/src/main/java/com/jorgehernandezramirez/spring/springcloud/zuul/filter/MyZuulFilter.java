@@ -37,7 +37,7 @@ public class MyZuulFilter extends ZuulFilter {
     @Override
     public Object run() {
         final HttpServletRequest request = RequestContext.getCurrentContext().getRequest();
-        LOGGER.info(String.format("%s request to %s", request.getMethod(), request.getRequestURL().toString()));
+        LOGGER.info("{} petición a {}", request.getMethod(), request.getRequestURL().toString());
         return null;
     }
 
