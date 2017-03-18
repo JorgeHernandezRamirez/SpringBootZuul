@@ -14,11 +14,8 @@ zuul:
     backend:
       path: /backend/**
       url: http://localhost:8080/
-    ribbonuser:
+    ribbonbackend:
       path: /ribbonbackend/**
       serviceId: BACKEND
 
-#ribbon:
-#  eureka:
-#    enabled: false
 
